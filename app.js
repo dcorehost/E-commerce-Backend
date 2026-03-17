@@ -40,7 +40,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-// app.use('/alphagifts', require('./routes/userRoutes'));
+app.use('/eCom', require('./routes/userRoutes'));
 
 
 console.log("MONGO_URI:", process.env.MONGO_URI);
