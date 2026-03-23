@@ -52,7 +52,6 @@ const checkAccess = (req, res, allowedRoles = []) => {
     res.status(403).send({ message: "You don't have access." });
     return false;
   }
-
   return true;
 };
 
